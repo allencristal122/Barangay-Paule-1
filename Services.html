@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="icon" href="image/logo1.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/services.css">
+</head> 
+<body>
+    <header class="header"> 
+        <a href="#" class="logo"> 
+            <img src="image/logo1.png" alt="Error Image" height="60px" width="60px"/>
+            <h2>Barangay Paule 1</h2> 
+        </a>
+        <button class="hamburger" title="hamburger" onclick="toggleMenu()"> 
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <nav class="navigation">
+            <a href="index.html" style="--i:1;">Home</a>
+            <a href="AboutUs.html" style="--i:2;">About Us</a>
+            <a id="index" href="Services.html" style="--i:3; color: white; background-color: #00aaff;
+            padding: 12px; border-radius: 30px;">Services</a>
+        </nav> 
+    </header>
+    <section class="services py-5" style="margin-top: 100px;">
+        <div class="container">
+            <h2 class="text-center mb-4" style="font-size: 40px;">Our Services</h2>
+            <p style="font-size: 18px; text-align: center;">Here is our services in Barangay Paule 1.</p>
+            <hr>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-4 d-flex align-items">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <i class="bi bi-people-fill" style="font-size: 40px; color: #007bff;"></i>
+                            <h5 class="card-title mt-3">Community Support</h5>
+                            <p class="card-text">Providing help and data to the residents and community.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <i class="bi bi-geo-alt-fill" style="font-size: 40px; color: #007bff;"></i>
+                            <h5 class="card-title mt-3">Local Development</h5>
+                            <p class="card-text">Initiatives to the enhance infrastructure and services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <i class="bi bi-book-fill" style="font-size: 40px; color: #007bff;"></i>
+                            <h5 class="card-title mt-3">Education Programs</h5>
+                            <p class="card-text">Educational initiatives aimed at empowering our youth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="width: 100%;"> 
+        <p>&copy; 2024 Barangay Paule 1. All rights reserved.</p> 
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleMenu() {
+            var navigation = document.querySelector('.navigation');
+            var hamburger = document.querySelector('.hamburger');
+
+            navigation.classList.toggle('active');
+
+            hamburger.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
